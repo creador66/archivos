@@ -23,6 +23,30 @@
     "catego3": "CSS",
     "imagen": "https://juansguzman.com/wp-content/uploads/2020/10/Sheets-Scripts.jpg"
   },
+    {
+    "id2": "16608",
+    "codi": "menus",
+    "producto": "menu hover",
+    "descripcion": "el mejor menu hover ",
+    "precio": "409",
+    "algo": "40",
+    "catego1": "HTML",
+    "catego2": "jvascript",
+    "catego3": "CSS",
+    "imagen": "images/02.jpg"
+  },
+    {
+    "id2": "1660834817679",
+    "codi": "tarjeta",
+    "producto": "MONO",
+    "descripcion": "Camisa blanca de caballero ",
+    "precio": "600",
+    "algo": "40",
+    "catego1": "HTML",
+    "catego2": "jvascript",
+    "catego3": "",
+    "imagen": "https://juansguzman.com/wp-content/uploads/2020/10/Sheets-Scripts.jpg"
+  },
   {
     "id2": "1660834858598",
     "codi": "tarjeta",
