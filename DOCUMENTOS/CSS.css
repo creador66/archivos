@@ -1,0 +1,568 @@
+
+/*====================*/
+:root {
+  --icon:#f38c2c;
+  --logo:#1100ff;
+  --icon-t:15px;
+  --tex-t:15px;
+  --menu-c:#12192C;
+}
+/*====================*/
+
+*{ 
+ /* border: solid 1px #000000;*/
+ box-sizing: border-box;
+  text-decoration: none;
+  margin: auto; 
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  list-style: none;
+}
+body {
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9F6FD;
+}
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 183, 255);
+  border-radius: 20px;
+  border: 0px solid;
+}
+
+
+/*__________BARRA SUPERIOR__________*/
+header{
+  position: fixed;
+  width: 100%;
+  background: var(--BLA1);
+  z-index: 5;
+}
+
+.HDR {/*CONTENEDOR*/
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  justify-content: space-between;
+  padding: 0 2rem 0 5rem;
+
+}
+.pepa{
+  background-color: #f0f0f0;
+}
+.login{/*IMAGEN DE PERFIL*/
+  order: 1;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 1px 1px 4px rgba(63, 62, 62, 0.267);
+}
+.login span{
+transform: translate(-15px);
+position: fixed;
+color: rgb(245, 125, 4);
+font-weight: 600;
+border-radius: 50%;
+font-size: 12px;
+}
+.login i{/*IMAGEN DE PERFIL*/
+font-size: 30px;
+color: #DF7401;
+background-color: #F4F0FA;
+box-shadow: 1px 1px 4px rgba(63, 62, 62, 0.267);
+}
+
+.HDR a{/*LOGOTIPO DE BARRA SUPERIOR*/
+  color: #818181;
+  font-weight: 500;
+  display: block;
+}
+.BUSCADOR{	
+  display: grid;
+  grid-template-columns: 90% 10%;
+  width: 300px;
+  margin: auto; 
+}
+
+.BUSCADOR input{
+  border: none;
+  outline: none;
+  background-color: #F4F0FA;
+  display: flex;
+  width: 300px;
+  padding: .55rem .75rem;
+  background-color: #F4F0FA;
+  border-radius: .25rem;
+}
+.BUSCADOR i{
+  font-size: 1.2rem;
+}
+/*________________FIN CODIGO________________*/
+
+nav{
+position: fixed;
+overflow: hidden;
+max-width: 50px;
+transition: .4s ease-in-out;
+height: 100%;
+box-shadow: 0 5px 10px rgb(0, 0, 0);
+background-image: linear-gradient(45deg, #011a52, #001c2c);
+z-index: 10;
+font-size: var(--icon-t);
+}
+
+nav span,
+.sub-btn a{
+font-size: var(--tex-t)
+}
+nav i{
+margin-right: 4PX;
+color: var(--icon);
+}
+nav a{
+color: rgb(235, 235, 235);
+
+}
+.capsula-menu{
+margin-top: 10px;
+display: grid;
+gap: 1.7rem;
+padding: 15px;
+}
+.sub-btn{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin: auto;
+}
+.sub-menu{
+overflow: hidden;
+max-height: 21px;
+transition: .4s ease-in-out;
+}
+.sub-menu:hover{
+max-height: 100rem;
+}
+.sub-menu li{
+padding: 3px;
+}
+.sub-menu i{
+  margin-right: 1px;
+}
+
+/*___BOTON GUIRA 180 GADOS____*/
+.gr180 i{
+  font-size: 20px;
+  }
+  .gr180{
+    text-align: right;
+  }
+  .sub-menu:hover .gr180 i{
+  transition: .4s ease-in-out;
+  transform: rotate(180deg);
+  }
+  /*_______*/
+.fon-sub a{
+color: rgb(34, 34, 34);
+font-size: 12px;
+}
+.fon-sub{
+  margin-top: 4px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.secciones{
+  padding: 5px;
+  text-align: center;
+border-radius: 9px;
+}
+.secciones span{
+font-size: 17px;
+color: #f3f3f3a1;
+}
+.logo-1{
+display: flex;
+}
+.logo-1 span{
+color: rgb(255, 255, 255);
+}
+.logo-1 i{
+color: var(--logo);
+}
+
+.sub-btn a,
+.capsula-menu span{
+  opacity: 0;
+transition: .4s ease-in-out;
+}
+
+
+.btn-menu{
+text-align: right;
+padding: 3px;
+width: 40px;
+border-radius: 0px 10px 10px 0px;
+margin-left: 122px;
+top: 50%;
+position: fixed;
+background-color:var(--menu-c);
+transition: .4s ease-in-out;
+display: none;
+}
+
+/*________________*/
+nav:hover .btn-menu,
+nav:hover{
+transition: .4s ease-in-out;
+background-image: linear-gradient(45deg, #4c00be, #001c2c);
+}
+nav:hover,
+nav:hover .capsula-menu span,
+nav:hover .sub-btn a,
+nav:hover .secciones{
+ max-width: 155px;
+ opacity: 1;
+}
+.btn-login{
+  display: grid;
+  height: 100px;
+}
+
+
+
+
+article{
+padding: 4rem 1rem 1rem 4rem;
+}
+.seccion1{
+  position: sticky;
+  width: 30%;
+  float: left;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contenedor-de-flotantes{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+
+.super{
+height: 300px;
+}
+.super img{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.intrucciones{
+display: grid;
+grid-template-columns: 40% 60%;
+gap: 0.5rem;
+}
+
+.imagen-2{
+ width: 100%;
+height: 100%;
+}
+.imagen-2 img{
+width: 100%;
+height: 100%;
+}
+.intruc-titulo button{
+border: none;
+padding: 3px;
+}
+.intruc-titulo h1{
+  font-size: 15px;
+
+}
+.intruc-especificacion h2{
+font-size: 10px;
+}
+.precio-tar{
+text-align: right;
+}
+
+.precio-tar h2{
+color: #707070;
+font-size: 15px;
+}
+.precio-tar h3{
+color: #707070;
+font-size: 10px;
+}
+.intruc-visual{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+
+}
+.intruc-visual a{
+  font-size: 12px;
+  color: #707070;
+
+}
+
+.etiquetas{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 5px;
+
+}
+.etiquetas a,
+.etiquetas button{
+  border: none;
+  background-color: #fdfdfd;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 1px;
+  box-shadow: 1px 1px 4px rgba(63, 62, 62, 0.267);
+  padding: 4px 10px 4px 10px;
+  color: #0a405f;
+}
+
+
+
+
+.botones-con{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 30% 69%;
+  gap: 1%;
+}
+.botones-con input{
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  border: solid 1px rgb(190, 190, 190);
+  border-radius: 5px 5px 0px 5px;
+  background-color: #f0f0f0;
+}
+.botones-con button{
+border-radius: 5px 5px 0px 5px;
+border: none;
+background-image: linear-gradient(45deg, #4c00be, #001c2c);
+color: #ffffff;
+height: 30px;
+width: 100%;
+}
+
+
+
+
+/* nnnnnnnnnnnnn,,..mliqjxiuhdxuondxndounnnnnnnnnnnn */
+
+
+.seccion2{
+width: 70%;
+float: right;
+padding: 15px;
+}
+table{
+width: 100%; 
+}
+tbody{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 1rem;
+}
+
+.perro0{
+text-align: left;
+}
+.padin{
+padding: 0.5rem;
+}
+
+.imagenx{
+height: 200px;
+width: 100%;
+}
+.imagenx img{
+border-radius: 15px 10px 0px 15px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+height: 100%;
+width: 100%;
+}
+.perro2{
+display: grid;
+background-color: #ffffff;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+width: 100%;
+border-radius: 15px;
+  }
+/* nnnnnnnnnnnnn,,..mliqjxiuhdxuondxndounnnnnnnnnnnn */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.con-imput{
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+}
+
+.con-imput h4{
+  color: #001c2c;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 0;
+}
+.for{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  width: 100%;
+  margin: auto; 
+  background-color: rgba(59, 37, 94, 0);
+}
+.for input{
+  border: none;
+  outline: none;
+  background-color: #F4F0FA;
+  transform: translate(-10%);
+  width: 111%;
+  padding: .55rem .75rem;
+  border-radius: .25rem;
+  z-index: 2;
+  padding-left: 30PX;
+  border: 1px solid rgba(22, 8, 43, 0.1);
+}
+.for i{
+  font-size: 1.2rem;
+  z-index: 4;
+  margin-left: 4PX;
+}
+.for input:hover{
+  transition: all 1s ease;
+border: 1px solid #DF7401;
+}
+
+
+
+.formulario-1{
+background-image: linear-gradient(45deg, #ffffff, #ffffff8a);
+border-radius: 30px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+padding: 20px;
+position: fixed;
+height: 300px;
+width: 300px;
+z-index: 100;
+right: 5%;
+bottom: 0;
+display: none;
+}
+.formulario-1 h2{
+font-size: 16px;
+text-align: center;
+margin-bottom: 20px;
+color: #22abfa;
+
+}
+.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+.seccion1{width: 100%;}
+.seccion2{width: 100%;}
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+article{padding: 4rem 0.5rem 0.5rem 0.5rem;}
+nav,
+.capsula-menu span,
+.sub-btn a,
+.secciones{
+ max-width: 250px;
+ opacity: 1;
+ left: -150px;
+}
+nav:hover{
+left: 0%; 
+}
+header {
+padding: 0rem;
+}
+.btn-menu{
+display: block;
+}
+/*MENU SUPERIOR*/
+.HDR a{
+display: none;
+}
+.HDR{
+  padding: 0 1rem 0 0.1rem;
+}
+.BUSCADOR{	
+  padding: 0 0 0 1.5rem;
+  width: 90%;
+  grid-template-columns: 85% 15%;
+}
+.BUSCADOR input{width: 100%;}
+tbody{
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 1rem;
+  }
+}
+
+
