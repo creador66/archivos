@@ -13,7 +13,7 @@ function arranca(){
 	function cargaPro(){
 	pintarcarro()
 	
-	let url ="https://creador66.github.io/x666/productos.json";
+	let url ="DOCUMENTOS/productos.json";
 	
 	fetch(url)
 		.then( response => response.json() )
