@@ -1,23 +1,7 @@
 [
-  {
-    "id": "TARJETA"
-  },
-  {
-    "id": "TARJETA"
-  },
-    {
-    "id": "TARJETA"
-  },
-    {
-    "id": "TARJETA"
-  },
-  {
-    "id": "TARJETA"
-  },
-  {
-    "id": "TARJETA"
-  },
-  {
-    "id": "TARJETA"
-  }
-]
+	{'id':'tarjeta',},
+	{'id':'menus',},
+	{'id':'botones',},
+	{'id':'l2',},
+	{'id':'nada',} 
+];
